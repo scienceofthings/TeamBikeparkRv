@@ -1,5 +1,10 @@
 # setup
-plugin.tx_mtbraceresult.persistence.storagePid = 32
+plugin.tx_mtbraceresult{
+    persistence.storagePid = 32
+    view.templateRootPath = fileadmin/default/templates/extensions/mtbraceresult/Templates/
+    view.partialRootPath = fileadmin/default/templates/extensions/mtbraceresult/Partials/
+    view.layoutRootPath = fileadmin/default/templates/extensions/mtbraceresult/Layouts/
+}
 
 plugin.tx_mtbraceresult.settings{
     defaultPortrait = fileadmin/default/templates/images/portraits/radfahrer.png
