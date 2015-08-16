@@ -1,0 +1,26 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+
+<ul class="list">
+	<f:for each="{fileCollections}" as="fileCollection">
+        <f:cycle values="{0: 'odd', 1: 'even'}" as="cycle">
+            
+		<li class="gallery {cycle}">
+            <div class="wrapper">
+			<f:link.action action="showGallery" arguments="{fileCollectionUid: fileCollection.identifier}">
+                <h2>{fileCollection.title}</h2>
+                    <f:for each="{fileCollection}" as="image" iteration="iterator">                        
+                        <f:if condition="{iterator.isFirst}">                            
+                            <f:image src="fileadmin{image.identifier}" alt="image.properties.name" width="340c" height="400c"/>
+                        </f:if>                    
+                    </f:for>
+			</f:link.action>
+            </div>
+		</li>        
+        </f:cycle>
+	</f:for>
+</ul>
+</f:section>

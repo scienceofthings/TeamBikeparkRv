@@ -1,0 +1,25 @@
+<f:layout name="Default" />
+<f:section name="main">
+<f:flashMessages />
+
+<h3>{galleryItem.title}</h3>
+
+<f:image src="{galleryItem.publicUrl}" 
+		alt="{galleryItem.alternative}" 
+		title="{galleryItem.title}" 
+		maxHeight="{settings.single.image.height}" 
+		maxWidth="{settings.single.image.width}" 
+		class="tx-mediagallery-singleimage" />
+
+<f:format.html>{galleryItem.description}</f:format.html>
+
+<f:if condition="{settings.allowDownload}">
+	<f:link.action action="downloadFile" arguments="{fileIdentifier: fileIdentifier}">
+		<f:translate key="link.saveFile">save file</f:translate>
+	</f:link.action>
+</f:if>
+
+<f:link.action class="tx-mediagallery-link" action="showGallery" arguments="{fileCollectionUid: fileCollection.identifier}">
+	<f:translate key="link.backToGallery">Back to Gallery</f:translate>
+</f:link.action>
+</f:section>
