@@ -1,0 +1,26 @@
+lib.menuservice = HMENU
+lib.menuservice{  
+  special = list
+    special.value = 65,66
+         1 = TMENU
+         1 {
+            noBlur = 1
+            wrap =  <ul class="topbar pull-right hidden-sm hidden-xs">|</ul>
+            
+            NO = 1
+            NO.allWrap = <li> |</li>
+            NO.ATagBeforeWrap = 1
+           
+            ACT = 1
+            ACT.allWrap = <li class="active">|</li>
+            
+            CUR = 1
+            CUR < .NO
+            CUR.allWrap = <li class="active">|</li>
+            CUR.ATagBeforeWrap = 1
+            
+            SPC = 1
+            SPC.allWrap = <hr>
+            SPC.doNotShowLink = 1  
+         }
+}
