@@ -62,10 +62,7 @@ page{
     shortcutIcon = fileadmin/default/templates/img/favicon.ico
 
     # JS
-    includeJSFooterlibs.file1 = fileadmin/default/templates/javascript/jquery-1.11.3.min.js        
     includeJSFooterlibs.file2 = fileadmin/default/templates/javascript/jquery.colorbox-min.js
-    #includeJSFooterlibs.file3 = fileadmin/default/templates/javascript/bootstrap.min.js
-    #includeJSFooterlibs.file4 = fileadmin/default/templates/javascript/ie10-viewport-bug-workaround.js
     includeJSFooterlibs.file5 = fileadmin/default/templates/javascript/picturefill.min.js
     includeJSFooter.allDomains = fileadmin/default/templates/javascript/allDomains.js
 
