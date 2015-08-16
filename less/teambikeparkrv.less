@@ -1,0 +1,32 @@
+a{
+    color: @link-color-light;    
+}
+.nav li{
+    border-bottom: 3px solid white;
+}
+.nav > li > a:focus,          
+.nav > li > a:hover{
+    background-color: white;    
+    color: @link-color-light;
+    text-decoration: none;    
+}
+
+.nav > li:focus a,
+.nav > li:hover a,
+.nav > li.active a{
+    color:  @hover-color;
+}
+
+
+h1{
+    border-bottom: 1px solid #f4b926;
+}
+h3{
+    margin-top: 0;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: transparent;
+  color: @hover-color;
+}
