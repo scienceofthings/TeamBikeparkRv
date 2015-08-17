@@ -80,5 +80,9 @@ TCEFORM.tt_content.section_frame {
 
 #frames for content
 TCEFORM.tt_content.section_frame.addItems{
-  44 = 50:50
+  44 = col-2
+  45 = col-3
+  46 = col-4
+  47 = col-6
+  48 = col-12
 }

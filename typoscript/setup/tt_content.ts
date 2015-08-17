@@ -69,5 +69,13 @@ tt_content.image.20.1.sourceCollection {
 #frames for content
 tt_content.stdWrap.innerWrap.cObject{
     44 =< tt_content.stdWrap.innerWrap.cObject.default
-    44.20.10.value = col-md-6 col-sm-6
+    44.20.10.value = col-md-2
+    45 =< tt_content.stdWrap.innerWrap.cObject.default
+    45.20.10.value = col-md-3
+    46 =< tt_content.stdWrap.innerWrap.cObject.default
+    46.20.10.value = col-md-4 col-sm-6
+    47 =< tt_content.stdWrap.innerWrap.cObject.default
+    47.20.10.value = col-md-6
+    48 =< tt_content.stdWrap.innerWrap.cObject.default
+    48.20.10.value = col-md-12
 }
