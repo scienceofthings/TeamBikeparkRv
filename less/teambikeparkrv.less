@@ -1,9 +1,17 @@
 a{
     color: @link-color-light;    
 }
-.nav li{
+
+/* Navigation */
+.nav{
+  a{
+    color: #767676;
+  }
+  li{
     border-bottom: 3px solid white;
+  }
 }
+
 .nav > li > a:focus,          
 .nav > li > a:hover{
     background-color: white;    
@@ -11,9 +19,9 @@ a{
     text-decoration: none;    
 }
 
-.nav > li:focus a,
-.nav > li:hover a,
-.nav > li.active a{
+.nav > li:focus > a,
+.nav > li:hover > a,
+.nav > li.active > a{
     color:  @hover-color;
 }
 
