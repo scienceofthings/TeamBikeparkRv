@@ -77,5 +77,5 @@ tt_content.stdWrap.innerWrap.cObject{
     47 =< tt_content.stdWrap.innerWrap.cObject.default
     47.20.10.value = col-md-6
     48 =< tt_content.stdWrap.innerWrap.cObject.default
-    48.20.10.value = col-md-12
+    48.20.10.value = col-md-12 clearfix
 }
