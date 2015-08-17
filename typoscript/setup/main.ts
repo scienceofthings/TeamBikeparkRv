@@ -1,6 +1,5 @@
 # Global Configuration
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/default/templates/typoscript/setup/page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/default/templates/typoscript/setup/lib.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/default/templates/typoscript/setup/config.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/default/templates/typoscript/setup/tt_content.ts">
 
