@@ -26,12 +26,10 @@ page{
       key.override.field = backend_layout
       default = TEXT
       default.value = fileadmin/default/templates/bootstrap-1col.html
-
       1 = TEXT
       1.value = fileadmin/default/templates/bootstrap-2col.html
-
-
-
+      7 = TEXT
+      7.value = fileadmin/default/templates/bootstrap-1col-grid.html
     }
   }
  
