@@ -64,20 +64,6 @@ RTE.default {
   toolbarOrder = textstyle, formatblock, formatblocklabel, line, link, image, removeformat, findreplace, undo, redo, textcolor,  copy, cut,insertcharacter, bold, italic, underline, left, center, right, orderedlist, unorderedlist, chMode
 }
 
-
-
-
-
-#copy and paste into page typoscript
-TCEFORM.tt_content.section_frame {
-     #removeItems = 1,5,6,10,11,12,20,21
-}
-
-# neuen Rahmen hinzufuegen
-TCEFORM.tt_content.section_frame {
-     #addItems.100 = 250px Breite
-}
-
 #frames for content
 TCEFORM.tt_content.section_frame.addItems{
   44 = col-2
@@ -86,3 +72,9 @@ TCEFORM.tt_content.section_frame.addItems{
   47 = col-6
   48 = col-12
 }
+
+##id storagepage of gridlayout
+TCEFORM.pages.backend_layout.PAGE_TSCONFIG_ID=1
+TCEFORM.pages.backend_layout_next_level.PAGE_TSCONFIG_ID=1
+
+TCEFORM.tt_content.header_layout.removeItems = 8,9,10
