@@ -40,20 +40,7 @@ page{
 
   #Stylesheets
   includeCSS{
-  #file1 = fileadmin/default/templates/css/reset.css
-  #file1.media = screen, projection
-  #file2 = fileadmin/default/templates/css/960_24_col.css
-  #file2.media = screen, projection
-  #file3 = fileadmin/default/templates/css/style.css
-  #file3.media = screen, projection
-  #file4 = fileadmin/default/templates/css/rte.css
-  #file4.media = screen, projection
-  #file5 = fileadmin/default/templates/css/print.css
-  #file5.media = print
-  #file6 = fileadmin/default/templates/css/colorbox/colorbox.css
-  #file6.media = screen, projection
-  file7 = fileadmin/default/templates/css/default.css
-
+    file1 = fileadmin/default/templates/css/default.css
   }
   
     #favicon
