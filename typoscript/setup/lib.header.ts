@@ -1,38 +1,41 @@
-
-
-[PIDinRootline = {$pidOfTSW}]
 lib.header = IMAGE
 lib.header{
     file = fileadmin/default/templates/images/header/headerTswBg.png
-    file.width = 320
+    file.width = 255
     stdWrap.typolink.parameter = {$pidOfTSW}
     altText = Logo
     layoutKey = picture
     layout{
         picture {
-            element = <picture>###SOURCECOLLECTION###<img src="###SRC###" ###PARAMS### ###ALTPARAMS### ###SELFCLOSINGTAGSLASH###></picture>
-            source = <source src="###SRC###" media="###MEDIAQUERY###" ###SELFCLOSINGTAGSLASH###>
+            element = <picture>###SOURCECOLLECTION###<img srcset="###SRC###" ###PARAMS### ###ALTPARAMS### ###SELFCLOSINGTAGSLASH###></picture>
+            source = <source srcset="###SRC###" media="###MEDIAQUERY###" ###SELFCLOSINGTAGSLASH###>
         }
     }
     sourceCollection {
         large{
             width = 1140
             maxW = 1140
-            mediaQuery = (min-device-width: 1170px)
-        }
-        small{
-            width = 720
-            maxW = 720
-            mediaQuery = (min-device-width: 750px)
+            mediaQuery = (min-width: 1170px)
         }
         medium{
             width = 940
             maxW = 940
-            mediaQuery = (min-device-width: 940px)
+            mediaQuery = (min-width: 940px)
+        }
+        small{
+            width = 720
+            maxW = 720
+            mediaQuery = (min-width: 720px)
         }
     }
 }
 
+[PIDinRootline = {$pidOfTSW}]
+lib.header = IMAGE
+lib.header{
+    file = fileadmin/default/templates/images/header/headerTswBg.png
+    stdWrap.typolink.parameter = {$pidOfTSW}
+}
 [global]
 
 [PIDinRootline = {$pidOfBikepark}]

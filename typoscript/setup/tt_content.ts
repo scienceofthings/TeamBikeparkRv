@@ -25,8 +25,6 @@ tt_content.image.20.1.imageLinkWrap {
         parameter.cObject = IMG_RESOURCE
         parameter.cObject.file {
             import.current = 1
-            #height = {$styles.content.imgtext.maxH}
-            #effects = {$styles.content.imgtext.linkWrap.effects}
         }  
         parameter.override {
             field = image_link
@@ -54,15 +52,15 @@ tt_content.image.20.1.sourceCollection {
         maxW = 1140
         mediaQuery = (min-device-width: 1170px)
     }
-    small{
-        width = 720
-        maxW = 720
-        mediaQuery = (min-device-width: 750px)
-    }
     medium{
         width = 940
         maxW = 940
         mediaQuery = (min-device-width: 940px)
+    }
+    small{
+        width = 720
+        maxW = 720
+        mediaQuery = (min-device-width: 750px)
     }
 }
 
