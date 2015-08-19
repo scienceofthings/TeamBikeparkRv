@@ -40,15 +40,16 @@ page{
 
   #Stylesheets
   includeCSS{
-    file1 = fileadmin/default/templates/css/default.css
+    file1 = fileadmin/default/templates/css/colorbox/colorbox.css
+    file3 = fileadmin/default/templates/css/default.css
   }
   
     #favicon
     shortcutIcon = fileadmin/default/templates/img/favicon.ico
 
     # JS
-    includeJSFooterlibs.file2 = fileadmin/default/templates/javascript/jquery.colorbox-min.js
-    includeJSFooterlibs.file5 = fileadmin/default/templates/javascript/picturefill.min.js
+    includeJSFooterlibs.file1 = fileadmin/default/templates/javascript/jquery.colorbox-min.js
+    includeJSFooterlibs.file3 = fileadmin/default/templates/javascript/picturefill.min.js
     includeJSFooter.allDomains = fileadmin/default/templates/javascript/allDomains.js
 
     
