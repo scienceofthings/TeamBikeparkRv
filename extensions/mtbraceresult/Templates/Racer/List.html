@@ -5,17 +5,16 @@
 <ul class="racers list row" >
 	<f:for each="{racers}" as="racer">
 		<li class="col-sm-2">
-                <f:if condition="{racer.portrait}">
+                <f:if condition="{racer.portrait.uid}">
                     <f:then>
-                        <a href="{uploadfolder}/{racer.portrait}" 
-			class="lightbox" 
-			rel="lightbox['racerslist']" 
-			title="{racer.name}" >
-                            <f:cObject typoscriptObjectPath="plugin.tx_mtbraceresult.racer.list.image" data="{racer.portrait.uid}" />
-                        </a>
+                            <f:cObject typoscriptObjectPath="plugin.tx_mtbraceresult.racer.list.image">
+                                {f:uri.image(src:racer.portrait.uid,treatIdAsReference:1)}
+                            </f:cObject>
                     </f:then>
                     <f:else>
-                        <f:cObject typoscriptObjectPath="plugin.tx_mtbraceresult.racer.list.image" data="{defaultPortrait}" />
+                        <f:cObject typoscriptObjectPath="plugin.tx_mtbraceresult.racer.list.image">
+                            {f:uri.image(src:371,treatIdAsReference:1)}
+                        </f:cObject>
                     </f:else>
                 </f:if>                                
                 <p>

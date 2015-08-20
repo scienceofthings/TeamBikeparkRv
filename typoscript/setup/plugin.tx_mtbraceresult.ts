@@ -97,10 +97,24 @@ plugin.tx_mtbraceresult.racer.list.image{
         import.current = 1
         treatIdAsReference = 1
     }
-    altText = Logo
+    params = class="img-responsive img-content"
+    altText.data = field:altText
+    titleText.data = field:titleText
     layoutKey = picture
-    layout < tt_content.image.20.1.layout
-    sourceCollection < tt_content.image.20.1.sourceCollection
+    layout{
+        picture {
+            element = <picture>###SOURCECOLLECTION###<img srcset="###SRC###" ###PARAMS### ###ALTPARAMS### ###SELFCLOSINGTAGSLASH###></picture>
+            source = <source srcset="###SRC###" media="###MEDIAQUERY###" ###SELFCLOSINGTAGSLASH###>
+        }
+    }
+    sourceCollection>
+    sourceCollection{
+        small{
+            width = 150
+            maxW = 150
+            mediaQuery = (min-width: 720px)
+        }
+    }
 }
 
 
