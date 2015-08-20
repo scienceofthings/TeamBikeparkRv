@@ -44,23 +44,31 @@ tt_content.image.20.1.imageLinkWrap {
 
 
 tt_content.image.20.maxW = 500
-tt_content.image.20.1.sourceCollection {
-    smallRetina >
-    small >
-    large{
-        width = 1140
-        maxW = 1140
-        mediaQuery = (min-device-width: 1170px)
+tt_content.image.20.1{
+    layoutKey = picture
+    layout{
+        picture {
+            element = <picture>###SOURCECOLLECTION###<img srcset="###SRC###" ###PARAMS### ###ALTPARAMS### ###SELFCLOSINGTAGSLASH###></picture>
+            source = <source srcset="###SRC###" media="###MEDIAQUERY###" ###SELFCLOSINGTAGSLASH###>
+        }
     }
-    medium{
-        width = 940
-        maxW = 940
-        mediaQuery = (min-device-width: 940px)
-    }
-    small{
-        width = 720
-        maxW = 720
-        mediaQuery = (min-device-width: 750px)
+    sourceCollection >
+    sourceCollection {
+        large{
+            width = 1140
+            maxW = 1140
+            mediaQuery = (min-width: 1170px)
+        }
+        medium{
+            width = 940
+            maxW = 940
+            mediaQuery = (min-width: 940px)
+        }
+        small{
+            width = 720
+            maxW = 720
+            mediaQuery = (min-width: 720px)
+        }
     }
 }
 

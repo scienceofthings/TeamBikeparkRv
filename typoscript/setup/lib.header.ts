@@ -2,6 +2,7 @@ lib.header = IMAGE
 lib.header{
     file = fileadmin/default/templates/images/header/headerTswBg.png
     file.width = 255
+    params = class="img-responsive img-content"
     stdWrap.typolink.parameter = {$pidOfTSW}
     altText = Logo
     layoutKey = picture
