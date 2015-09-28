@@ -22,7 +22,10 @@ plugin.tx_mtbraceresult{
                 1996 = U23
                 1995 = U23
                 1994 = U23
-                default = Elite
+                1993 = Elite
+                1992 = Elite
+                1991 = Elite
+                1990 = Elite
             }
             2015{
                 2004 = U11
@@ -37,7 +40,9 @@ plugin.tx_mtbraceresult{
                 1995 = U23
                 1994 = U23
                 1993 = U23
-                default = Elite
+                1992 = Elite
+                1991 = Elite
+                1990 = Elite
             }
             2014{
                 2003 = U11
@@ -52,7 +57,8 @@ plugin.tx_mtbraceresult{
                 1994 = U23
                 1993 = U23
                 1992 = U23
-                default = Elite
+                1991 = Elite
+                1990 = Elite
             }
             2013{
                 2003 = U11
@@ -68,7 +74,6 @@ plugin.tx_mtbraceresult{
                 1993 = U23
                 1992 = U23
                 1991 = U23
-                default = Elite
             }
             2012{
                 2002 = U11
@@ -84,7 +89,6 @@ plugin.tx_mtbraceresult{
                 1992 = U23
                 1991 = U23
                 1990 = U23
-                default = Elite
             }
         }
     }
