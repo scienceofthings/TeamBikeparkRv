@@ -6,21 +6,21 @@
 
 <ul class="list">
 	<f:for each="{fileCollections}" as="fileCollection">
-        <f:cycle values="{0: 'odd', 1: 'even'}" as="cycle">
-            
-		<li class="gallery {cycle}">
+		<li class="gallery col-sm-4">
             <div class="wrapper">
 			<f:link.action action="showGallery" arguments="{fileCollectionUid: fileCollection.identifier}">
-                <h2>{fileCollection.title}</h2>
                     <f:for each="{fileCollection}" as="image" iteration="iterator">                        
-                        <f:if condition="{iterator.isFirst}">                            
-                            <f:image src="fileadmin{image.identifier}" alt="image.properties.name" width="340c" height="400c"/>
+                        <f:if condition="{iterator.isFirst}">
+                            <f:cObject typoscriptObjectPath="plugin.tx_mediagallery.list.image">
+                                {f:uri.image(src:image.uid)}
+                            </f:cObject>
+
                         </f:if>                    
                     </f:for>
+                    <h3><f:format.crop maxCharacters="55" append="...">{fileCollection.title}</f:format.crop></h3>
 			</f:link.action>
             </div>
-		</li>        
-        </f:cycle>
+		</li>
 	</f:for>
 </ul>
 </f:section>

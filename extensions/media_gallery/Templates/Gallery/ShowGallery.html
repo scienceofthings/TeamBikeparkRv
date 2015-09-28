@@ -10,7 +10,7 @@
     <f:for each="{fileCollection}" as="image">
         
             <f:cycle values="{0: 'first', 1: '', 2: 'last'}" as="cycle">
-                <li class="{cycle} image">        
+                <li class="{cycle} image col-sm-4">
                     <a href="{f:uri.image(src: image.publicUrl)}" 
                        class="lightbox" 
                        rel="lightbox[fileCollection.identifier]" 
@@ -18,7 +18,8 @@
                         <f:image src="{image.publicUrl}" 
                                  alt="{image.alternative}" 
                                  title="{image.title}" 
-                                 height="188c" 
+                                 height="188c"
+                                 class="img-responsive img-content"
                                  width="244" />
                     </a>
                 <f:if condition="{image.title}">
