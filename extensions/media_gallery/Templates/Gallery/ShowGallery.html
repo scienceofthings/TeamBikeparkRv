@@ -4,7 +4,7 @@
 <f:section name="main">
     <f:flashMessages />
 
-    <h3>{fileCollection.title}</h3>
+    <h3 class="col-md-12">{fileCollection.title}</h3>
 
     <ul class="gallery show clearfix">
     <f:for each="{fileCollection}" as="image">
@@ -18,9 +18,9 @@
                         <f:image src="{image.publicUrl}" 
                                  alt="{image.alternative}" 
                                  title="{image.title}" 
-                                 height="188c"
+                                 height="200c"
                                  class="img-responsive img-content"
-                                 width="244" />
+                                 width="360" />
                     </a>
                 <f:if condition="{image.title}">
                     <div class="caption">
