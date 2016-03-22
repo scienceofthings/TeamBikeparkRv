@@ -1,6 +1,6 @@
 # setup
 plugin.tx_mediagallery{
-view.templateRootPath = fileadmin/default/templates/extensions/media_gallery/Templates/
+    view.templateRootPaths = fileadmin/default/templates/extensions/media_gallery/Templates
 }
 
 plugin.tx_mediagallery.list.image = IMAGE
