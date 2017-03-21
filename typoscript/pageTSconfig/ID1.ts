@@ -1,4 +1,10 @@
-# paste into pageTSConfig
+# Allow iframes etc in content elements
+RTE.default.proc {
+	allowTags := addToList(object,param,embed,iframe)
+	allowTagsOutside := addToList(object,embed,iframe)
+	entryHTMLparser_db.allowTags < .allowTags
+}
+
 RTE.classesAnchor {
   pdf {
     class = pdf    
