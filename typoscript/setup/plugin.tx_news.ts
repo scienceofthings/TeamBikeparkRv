@@ -5,7 +5,7 @@ plugin.tx_news {
         }
         
         settings.displayDummyIfNoMedia = 0
-        settings.cropMaxCharacters = 280
+        settings.cropMaxCharacters = 200
         settings.list.paginate.insertAbove = FALSE
         settings.detail.showSocialShareButtons = 0
 }
