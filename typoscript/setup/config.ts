@@ -37,7 +37,7 @@ config.tx_realurl_enable = 1
 
 
 [PIDinRootline = {$pidOfTSW}]
-config.baseURL = http://www.team-steinlach-wiesaz.de/
+config.baseURL = https://www.team-steinlach-wiesaz.de/
 [global]
 
 [PIDinRootline = {$pidOfBikepark}]
