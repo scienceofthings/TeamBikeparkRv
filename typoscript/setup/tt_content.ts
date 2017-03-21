@@ -1,3 +1,6 @@
+# Allow iframes in content elements
+lib.parseFunc_RTE.allowTags := addToList(object,param,embed,iframe)
+
 tt_content.uploads.20 {  
     renderObj.15.file {
            import = fileadmin/default/templates/images/icons/
@@ -15,32 +18,6 @@ tt_content.uploads.20 {
 
 #Systemordner fuer Benutzer
 tt_content.login.20.hiddenFields.pid.value = 2
-
-# Custom Lightbox
-tt_content.image.20.1.imageLinkWrap {
-    JSwindow = 0
-    directImageLink = 1  
-    typolink >
-    typolink {
-        parameter.cObject = IMG_RESOURCE
-        parameter.cObject.file {
-            import.current = 1
-        }  
-        parameter.override {
-            field = image_link
-            listNum.stdWrap.data = register : IMAGE_NUM_CURRENT
-        }
-
-        ATagParams = class="lightbox" rel="lightbox[cb{field:uid}]"
-        ATagParams.insertData = 1
-        ATagParams.if.isFalse < .parameter.override
-
-        target = {$styles.content.links.target}
-        extTarget = {$styles.content.links.extTarget}
-    }
-}
-
-
 
 
 tt_content.image.20.maxW = 500
