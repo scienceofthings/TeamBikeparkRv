@@ -49,6 +49,7 @@ page{
 
     # JS
     includeJSFooterlibs.file1 = fileadmin/default/templates/javascript/jquery.colorbox-min.js
+    includeJSFooterlibs.file2 = fileadmin/default/templates/javascript/datatables.min.js
     includeJSFooterlibs.file3 = fileadmin/default/templates/javascript/picturefill.min.js
     includeJSFooter.allDomains = fileadmin/default/templates/javascript/allDomains.js
 
