@@ -1,22 +1,5 @@
 jQuery(document).ready(function () {
 
-
-    /*
-     jQuery Colorbox language configuration
-     language: German (de)
-     translated by: wallenium
-     */
-    jQuery.extend(jQuery.colorbox.settings, {
-        current: "Bild {current} von {total}",
-        previous: "Zurück",
-        next: "Vor",
-        close: "Schließen",
-        xhrError: "Dieser Inhalt konnte nicht geladen werden.",
-        imgError: "Dieses Bild konnte nicht geladen werden.",
-        slideshowStart: "Slideshow starten",
-        slideshowStop: "Slideshow anhalten"
-    });
-
     $('.table-responsive table').DataTable({
         responsive: true,
         pageLength: -1,
@@ -46,10 +29,11 @@ jQuery(document).ready(function () {
         }
     });
 
-    $('a.lightbox').colorbox({
-        'height': '100%'
-
-    });
+    $('a.lightbox').prettyPhoto(
+        {
+            social_tools: ''
+        }
+    );
 
 });
 
