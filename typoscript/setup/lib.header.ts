@@ -39,20 +39,20 @@ lib.header{
 }
 [global]
 
-[PIDinRootline = {$pidOfBikepark}]
+    [PIDinRootline = {$pidOfBikepark}]
 lib.header = IMAGE
-lib.header{  
-  file = fileadmin/default/templates/images/header/headerBikeparkBg.png
-  stdWrap.typolink.parameter = {pidOfBikepark}
+lib.header{
+    file = fileadmin/default/templates/images/header/headerBikeparkBg.png
+    file.width = 255
+    stdWrap.typolink.parameter = {$pidOfBikepark}
 }
 [global]
 
-[PIDinRootline = {$pidOfRV}]
+    [PIDinRootline = {$pidOfRV}]
 lib.header = IMAGE
-lib.header{  
-  file = fileadmin/default/templates/images/header/headerRvBg.png
-  stdWrap.typolink.parameter = {pidOfRV}
-}
-
+lib.header{
+    file = fileadmin/default/templates/images/header/headerRvBg.png
+    file.width = 255
+    stdWrap.typolink.parameter = {$pidOfRV}
 [global]
 
