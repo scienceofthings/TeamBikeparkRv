@@ -25,9 +25,11 @@ page{
       key.data = levelfield:-1, backend_layout_next_level, slide
       key.override.field = backend_layout
       default = TEXT
-      default.value = fileadmin/default/templates/bootstrap-1col.html
+      default.value = fileadmin/default/templates/bootstrap-12col.html
       1 = TEXT
-      1.value = fileadmin/default/templates/bootstrap-2col.html
+      1.value = fileadmin/default/templates/bootstrap-8-4col.html
+      6 = TEXT
+      6.value = fileadmin/default/templates/bootstrap-6-6col.html
       7 = TEXT
       7.value = fileadmin/default/templates/bootstrap-1col-grid.html
     }
