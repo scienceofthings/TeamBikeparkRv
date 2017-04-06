@@ -2,6 +2,7 @@ jQuery(document).ready(function () {
 
     $('.table-responsive table').DataTable({
         responsive: true,
+        ordering: false,
         pageLength: -1,
         lengthMenu: -1,
         "language": {
