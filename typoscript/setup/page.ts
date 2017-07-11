@@ -11,6 +11,9 @@ page{
       col3 < styles.content.get
       col3.select.where = colPos=1
 
+      teaser < styles.content.get
+      teaser.select.where = colPos=3
+
       headerimage < styles.content.get
       headerimage{
             select.where = colPos=2
@@ -28,10 +31,12 @@ page{
       default.value = fileadmin/default/templates/bootstrap-12col.html
       1 = TEXT
       1.value = fileadmin/default/templates/bootstrap-8-4col.html
-      6 = TEXT
-      6.value = fileadmin/default/templates/bootstrap-6-6col.html
+      8 = TEXT
+      8.value = fileadmin/default/templates/bootstrap-6-6col.html
       7 = TEXT
       7.value = fileadmin/default/templates/bootstrap-1col-grid.html
+      9 = TEXT
+      9.value = fileadmin/default/templates/bootstrap-teaser-and-8-4col.html
     }
   }
  
